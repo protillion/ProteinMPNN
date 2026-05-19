@@ -4,7 +4,7 @@ import subprocess
 
 
 
-def run_init_sm_eval(input_dir, output_dir, pmpnn_dir):
+def run_init_sm_eval(input_dir, output_dir):
     os.chdir(input_dir)
     input_filelist = [os.path.abspath(f) for f in os.listdir()
                       if "model_0." in f]
